@@ -28,11 +28,11 @@ export default class Produto extends Component {
  
         return (
             <div className="produto-info">
-                <h1> {produto.nome} </h1>
+                <h1><label htmlFor="nome"> Nome do Produto: </label> {produto.nome} </h1>
                 <h1> {produto.ativo} </h1>
                 <h1><label htmlFor="preco">  Preço do Produto: </label> {produto.preco} </h1>
                 <h1><label htmlFor="quantidade">Quantidade do Produto: </label> {produto.quantidade} </h1>
-                <h1> {produto.descricao} </h1>
+                <h1> <label htmlFor="descricao">  Descrição do Produto: </label>{produto.descricao} </h1>
                 <br />
                 <Link to={`/produtos`}> Voltar </Link> <br />
                 <Link to={`/editarProduto/${produto.id}`}> Editar </Link> <br />
