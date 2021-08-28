@@ -26,9 +26,6 @@ export default class Main extends Component {
 
         return (
             <div className="produto-list">
-                <Link to={`/criarProduto`}> <button type="button" class="btn btn-success">Novo</button> </Link>
-                <br /><br />
- 
                 <table class="table table-hover">
                     <thead>
                         <tr>
